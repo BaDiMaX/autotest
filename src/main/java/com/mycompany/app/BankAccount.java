@@ -1,8 +1,6 @@
 package com.mycompany.app;
 
-/**
- * Created by Администратор on 04.08.2017.
- */
+
 public class BankAccount {
     private String design_url;
     private Integer transactions_total_amount;
@@ -19,12 +17,12 @@ public class BankAccount {
     private String title;
     private Double balance;
     private String currency;
-    private String isSalary;
+    private Boolean isSalary;
 
     public BankAccount(){
     }
 
-    public BankAccount(String design_url, Integer transactions_total_amount, Integer tariff_avg_month_balance, Integer type, String closing_date, Integer partial_withdraw_available, Integer refill_available, Double blocked_amount, String scheme_id, String pan, Integer account_id, String title_small, String title, Double balance, String currency, String isSalary) {
+    public BankAccount(String design_url, Integer transactions_total_amount, Integer tariff_avg_month_balance, Integer type, String closing_date, Integer partial_withdraw_available, Integer refill_available, Double blocked_amount, String scheme_id, String pan, Integer account_id, String title_small, String title, Double balance, String currency, Boolean isSalary) {
         this.design_url = design_url;
         this.transactions_total_amount = transactions_total_amount;
         this.tariff_avg_month_balance = tariff_avg_month_balance;
@@ -163,11 +161,11 @@ public class BankAccount {
         this.currency = currency;
     }
 
-    public String getSalary() {
+    public Boolean getSalary() {
         return isSalary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(Boolean salary) {
         isSalary = salary;
     }
 

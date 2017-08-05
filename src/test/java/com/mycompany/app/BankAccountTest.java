@@ -4,9 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * Created by Администратор on 04.08.2017.
- */
 public class BankAccountTest {
     private RestTemplate restTemplate;
 
@@ -25,8 +22,8 @@ public class BankAccountTest {
     @Test
     public void infoBankAccountsTest() throws Exception {
         BankAccount[] bankAccounts = restTemplate.getForObject("http://kn-ktapp.herokuapp.com/apitest/accounts",BankAccount[].class);
-        for(int i = 0; i < bankAccounts.length; i++){
-            System.out.println(bankAccounts[i]);
-        }
+//        for(int i = 0; i < bankAccounts.length; i++){
+//            System.out.println(bankAccounts[i]);
+//        }
     }
 }
