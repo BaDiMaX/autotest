@@ -22,8 +22,8 @@ public class BankAccountTest {
     @Test
     public void infoBankAccountsTest() throws Exception {
         BankAccount[] bankAccounts = restTemplate.getForObject("http://kn-ktapp.herokuapp.com/apitest/accounts",BankAccount[].class);
-//        for(int i = 0; i < bankAccounts.length; i++){
-//            System.out.println(bankAccounts[i]);
-//        }
+        for(int i = 0; i < bankAccounts.length; i++){
+            System.out.println(bankAccounts[i]);
+        }
     }
 }

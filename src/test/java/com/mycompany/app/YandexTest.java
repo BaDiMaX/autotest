@@ -10,7 +10,6 @@ import static org.junit.Assert.assertTrue;
 
 
 public class YandexTest {
-    //
     @Before
     public void setUp() throws Exception {
         Configuration.browser = "chrome";
